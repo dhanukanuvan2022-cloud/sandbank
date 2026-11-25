@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sand Bank – Restaurant, Rooms &amp; Sandy Garden · Madiha, Matara</title>
+<meta name="description" content="Sand Bank in Madiha, Matara: restaurant, bar, nightly dinner buffet, ping-pong in the sand and private rooms. Book on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="logo" href="#top">Sand Bank</a>
+<nav><a href="#menu">Menu</a><a href="#rooms">Rooms</a><a href="#gallery">Gallery</a><a href="#reviews">Reviews</a><a href="#find">Find us</a><a class="btn wa sm" href="#book">Book a room</a></nav>
+</div></header>
+
+<main id="top">
+<div class="hero">
+<div class="slides" id="slides"></div>
+<div class="wrap hero-in">
+<p class="tag">Madiha, Matara · Sri Lanka</p>
+<h1>Eat, sleep and play in the sand.</h1>
+<p class="sub">A relaxed restaurant, bar and guesthouse in Madiha with a sandy garden, ping-pong, a buffet every night and private rooms a short walk from the beach.</p>
+<div class="row"><a class="btn wa" href="#book">Book on WhatsApp</a><a class="btn ghost light" href="#menu">See the menu</a></div>
+</div></div>
+
+<div class="wrap"><div class="facts">
+<div><b>Buffet dinner</b><span>Every night</span></div>
+<div><b>Private rooms</b><span>Air-con, own bathroom</span></div>
+<div><b>Sandy garden</b><span>Ping-pong, hammock, bar</span></div>
+<div><b>Near Madiha Beach</b><span>About 900 m away</span></div>
+</div></div>
+
+<section id="about"><div class="wrap about">
+<div class="pics"><img data-i="0" alt="Sand Bank welcome sign"><img data-i="21" alt="Hammock by the ping-pong table"></div>
+<div>
+<h2>Good vibes, high lives.</h2>
+<p class="lead">Sand Bank is built from timber, rope, brick and wicker under big shady trees. Come for a smoothie bowl in the morning, stay for tacos, burgers and the dinner buffet, then play a few rounds of table tennis on the sand.</p>
+<p class="lead">Our newly built rooms are quiet, cool and simple, so you can sleep right where you ate.</p>
+<ul class="chk"><li>Restaurant, bar and terrace</li><li>Free WiFi and parking</li><li>Breakfast available</li><li>24-hour reception</li></ul>
+<div class="row"><a class="btn" href="#rooms">View rooms</a><a class="btn ghost" href="#find">Get directions</a></div>
+</div></div></section>
+
+<section id="menu" class="alt"><div class="wrap">
+<h2>Menu</h2><p class="lead">Fresh breakfasts, tacos and burgers, juices and a nightly buffet. Prices are in Sri Lankan rupees (LKR).</p>
+<div class="tabs" role="tablist" id="tabs"></div>
+<div class="menu" id="menuGrid"></div>
+<p class="note">Menu and prices may change. Tell us about vegetarian, vegan or allergy needs.</p>
+</div></section>
+
+<section id="gallery"><div class="wrap"><h2>Around Sand Bank</h2><p class="lead">Tap a photo to see it larger.</p>
+<div class="gal" id="gal"></div></div></section>
+
+<section id="rooms" class="alt"><div class="wrap">
+<h2>Rooms</h2><p class="lead">Comfortable rooms with a big bed, soft light and your own bathroom.</p>
+<div class="rooms" id="roomList"></div>
+<div class="book" id="book">
+<div><h2>Book by WhatsApp</h2><p>Pick your dates and send. WhatsApp opens with everything filled in, and we reply to confirm availability.</p>
+<p><a class="inl" id="callLink" href="#"></a></p></div>
+<form id="bf2">
+<div class="f"><label for="nm">Your name</label><input id="nm" required autocomplete="name"></div>
+<div class="h"><label for="ci">Check-in</label><input id="ci" type="date" required></div>
+<div class="h"><label for="co">Check-out</label><input id="co" type="date" required></div>
+<div class="h"><label for="gs">Guests</label><select id="gs"><option>1</option><option selected>2</option><option>3</option><option>4</option></select></div>
+<div class="h"><label for="rt">Room</label><select id="rt"></select></div>
+<div class="f"><label for="nt">Notes (optional)</label><input id="nt" placeholder="Arrival time, dinner, requests"></div>
+<div id="est" aria-live="polite"></div>
+<div class="f"><button class="btn wa" type="submit" style="width:100%">Send booking on WhatsApp</button></div>
+</form></div></div></section>
+
+<section id="reviews"><div class="wrap">
+<h2>What guests say</h2>
+<div class="rate"><div class="score" id="score"></div><div><b id="scoreTxt"></b><p class="lead" style="margin:4px 0 0" id="scoreSub"></p></div></div>
+<div class="revs" id="revList"></div>
+<div class="row" style="margin-top:22px"><a class="btn" id="rvRead" target="_blank" rel="noopener" href="#">Read Google reviews</a><a class="btn ghost" id="rvWrite" target="_blank" rel="noopener" href="#">Write a review</a></div>
+</div></section>
+
+<section id="find" class="alt"><div class="wrap">
+<h2>Find us</h2>
+<div class="mapcard"><div class="mapwrap"><iframe id="map" title="Sand Bank on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+<div><dl>
+<dt>Address</dt><dd id="addr"></dd>
+<dt>Kitchen</dt><dd id="hrs"></dd>
+<dt>Check-in</dt><dd id="cin"></dd>
+<dt>WhatsApp</dt><dd><a id="wl" href="#"></a></dd>
+<dt>Phone</dt><dd><a id="tl" href="#"></a></dd></dl>
+<div class="row" style="margin-top:22px"><a class="btn" id="dir" target="_blank" rel="noopener" href="#">Get directions</a><a class="btn ghost" id="gm" target="_blank" rel="noopener" href="#">Open in Google Maps</a></div></div></div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+<div><b class="logo">Sand Bank</b><p id="fa"></p></div>
+<div class="social" id="social"></div>
+<p class="copy">© <span id="yr"></span> Sand Bank Restaurant &amp; Rooms</p>
+</div></footer>
+
+<a class="wafab" id="waFab" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" href="#">WhatsApp</a>
+<div id="lb" role="dialog" aria-label="Photo viewer"><button class="x" aria-label="Close">×</button><button class="pv" aria-label="Previous">‹</button><img alt=""><button class="nx" aria-label="Next">›</button></div>
+<button id="fab" aria-label="Ask our assistant">💬</button>
+<div id="bot" role="dialog" aria-label="Sand Bank assistant"><div class="bh">Sand Bank assistant</div><div id="log"></div><div class="chips" id="chips"></div>
+<form id="bf"><input id="bi" placeholder="Ask about food, rooms, prices…" aria-label="Your question"><button>Send</button></form></div>
+<script src="script.js"></script>
+</body>
+</html>
